@@ -8,9 +8,9 @@ export const TaskCounter = () => {
   const count = tasks.reduce(
     (acc, task) => {
       if (task.completed) {
-        acc.active += 1;
-      } else {
         acc.completed += 1;
+      } else {
+        acc.active += 1;
       }
       return acc;
     },
